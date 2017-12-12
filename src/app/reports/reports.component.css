@@ -1,0 +1,9 @@
+li {
+  color: red;
+}
+.selected {
+  font-weight: bold;
+}
+.valid {
+  color: green;
+}

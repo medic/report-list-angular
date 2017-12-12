@@ -1,0 +1,11 @@
+<ul class="reports">
+  <li
+      *ngFor="let report of reports"
+      (click)="onSelect(report)"
+      [class.selected]="report === selected"
+      [class.valid]="report.valid">
+    <p>{{report.subject}}</p>
+    <p>{{report.form}}</p>
+    <app-dates [date]="report.reportedDate"></app-dates>
+  </li>
+</ul>
